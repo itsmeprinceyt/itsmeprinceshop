@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="orders">
         <table>
             <tr>
                 <th>#</th>
@@ -176,5 +177,17 @@
                 <td>21 February 2024</td>
             </tr>
         </table>
-    </body>
+    </div>
+    <button id="showButton">Show Content</button>
+    <script>
+            document.getElementById('showButton').addEventListener('click', function() {
+            var myDiv = document.getElementById('orders');
+            if (myDiv.style.display === 'none') {
+                myDiv.style.display = 'block';
+            } else {
+                myDiv.style.display = 'none';
+            }
+            });
+    </script>    
+</body>
 </html>
