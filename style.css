@@ -14,7 +14,7 @@
 }
 a{
     color: white;
-    background-color: black;
+    background-color: rgb(25, 25, 25);
     padding: 5px 60px 5px 60px;
     border-radius: 20px;
     text-decoration: none;
@@ -79,7 +79,7 @@ tr td:nth-child(1):hover {
 } 
 tr td:nth-child(5):hover { 
     background-color: #69ff3b; 
-    color: rgb(0, 0, 0);
+    color: rgb(25, 25, 25);
     font-weight: bold;
     border-color: #69ff3b; 
     border-radius: 4px;
