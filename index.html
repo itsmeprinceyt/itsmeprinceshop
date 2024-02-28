@@ -6,6 +6,15 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="header">
+            <p class="title">ItsMe Prince Shop</p>
+            <a class="refer"href="https://discord.gg/spHgh4PGzF" target="_blank">Discord • Shop Now</a>
+            <div class="button-div">
+                <button id="showButton">Show</button>
+                <button id="hideButton">Hide</button>
+            </div>
+        </div>
+        <div class="container">
         <div id="orders">
         <table>
             <tr>
@@ -184,15 +193,32 @@
                 <td>&#8377;400</td>
                 <td>24 February 2024</td>
             </tr>
+            <tr>
+                <td>22</td>
+                <td>Sudhes</td>
+                <td>Express Pass</td>
+                <td>811081572</td>
+                <td>&#8377;395</td>
+                <td>28 February 2024</td>
+            </tr>
         </table>
     </div>
-    <button id="showButton">Show Content</button>
+    </div>
     <script>
             document.getElementById('showButton').addEventListener('click', function() {
             var myDiv = document.getElementById('orders');
-            if (myDiv.style.display === 'none') {
+            if (myDiv.style.display === 'none')
+            {
                 myDiv.style.display = 'block';
-            } else {
+            }
+            else
+            {
+                myDiv.style.display = 'block';
+            }
+            });
+            document.getElementById('hideButton').addEventListener('click', function() {
+            var myDiv = document.getElementById('orders');
+            if (myDiv.style.display === 'block') {
                 myDiv.style.display = 'none';
             }
             });

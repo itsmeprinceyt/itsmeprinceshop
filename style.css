@@ -1,5 +1,46 @@
+.header{
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    align-items: center;
+}
+.title{
+    font-size: 40px;
+    margin: 0;
+    font-family: Arial;
+    font-weight: bold;
+}
+a{
+    color: white;
+    background-color: black;
+    padding: 5px 60px 5px 60px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Arial;
+}
+a:hover{
+    background-color:#69ff3b; 
+    color:rgb(25, 25, 25);
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
 #orders{
     display: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 750px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    
 }
 th{
     background-color: rgb(25, 25, 25);
@@ -51,21 +92,16 @@ td:hover{
     border-radius: 4px;
 }
 
-#showButton{
+#showButton, #hideButton{
     background-color: rgb(25, 25, 25);
     color: white;
     border: none;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    padding-right: 50px;
-    margin-top: 20px;
+    padding: 5px 20px 5px 20px;
     font-family: Arial;
-    font-size: 20px;
+    font-size: 15pxpx;
     border-radius: 20px;
 }
-#showButton:hover{
+#showButton:hover, #hideButton:hover{
     background-color:#69ff3b; 
     color:rgb(25, 25, 25);
-    font-weight: bold;
 }
