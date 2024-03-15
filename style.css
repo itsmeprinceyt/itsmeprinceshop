@@ -33,14 +33,13 @@ a:visited{
     justify-content: center;
 }
 #orders{
-    display: none;
     display: grid;
     grid-template-columns: 1fr;
     width: 750px;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    
+    opacity: 0;
 }
 th{
     background-color: rgb(25, 25, 25);
@@ -104,4 +103,17 @@ td:hover{
 #showButton:hover, #hideButton:hover{
     background-color:#69ff3b; 
     color:rgb(25, 25, 25);
+}
+
+@media (max-width: 768px){
+    #orders{
+        width: 480px;
+    }
+    
+    th{
+        font-size: 11px;
+    }
+    td{
+        font-size: 11px;
+    }
 }
